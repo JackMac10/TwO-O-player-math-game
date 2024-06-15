@@ -20,6 +20,7 @@ class Game
         current_player.lose_life
       end
 
+
       display_scores
       switch_player
       puts "-----NEW TURN-----" unless game_over?
@@ -43,6 +44,7 @@ class Game
     @players.any? { |player| !player.alive? }
   end
 
+  
   def announce_winner
     winner = @players.find { |player| player.alive? }
     loser = @players.find { |player| !player.alive? }

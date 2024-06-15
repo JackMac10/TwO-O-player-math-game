@@ -10,6 +10,7 @@ class Player
     @lives -= 1
   end
 
+  
   def alive?
     @lives > 0
   end
